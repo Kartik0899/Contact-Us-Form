@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+
+
+    <link rel="stylesheet" href="contact_us.css">
+
+
+
+
+    <!-- Header css -->
+    <style>
+        .nav-container.navbar {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0px auto;
+            display: table;
+            position: relative;
+        }
+
+        header {
+            width: 100%;
+            display: table;
+            background-color: #89ebf8b3;
+            box-shadow: 1px 18px 16px black;
+            /* margin-bottom: 50px; */
+        }
+
+        .nav-text {
+            float: left;
+            font-size: 24px;
+            text-transform: uppercase;
+            color: #002e5b;
+            font-weight: 600;
+            padding: 20px 0px;
+            text-decoration: none;
+            margin-left: 23px;
+        }
+
+        nav {
+            width: auto;
+            float: right;
+        }
+
+        nav ul {
+            display: table;
+            float: right;
+        }
+
+        nav ul li {
+            float: left;
+            list-style: none;
+        }
+
+        nav ul li a {
+            color: #002e5b;
+            font-size: 18px;
+            padding: 25px 20px;
+            display: inline-block;
+            text-decoration: none;
+            transition: all 0.5s ease 0s;
+            text-transform: uppercase;
+        }
+
+        nav ul li a:hover {
+            /* background-color: #002e5b; */
+            color: #000000;
+            /* transition: all 0.5s ease 0s; */
+            transform: translateY(0.3em);
+        }
+
+        @media only screen and (max-width: 480px) {
+            nav ul li a {
+                color: #002e5b;
+                font-size: 15px;
+                padding: 25px 20px;
+                display: inline-block;
+                text-decoration: none;
+                transition: all 0.5s ease 0s;
+            }
+        }
+    </style>
+
+
+    <!-- End Header css -->
+
+
+
+
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="nav-container">
+            <div class="navbar">
+                <div class="nav-text">
+                    LOGO
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="">HOME</a></li>
+                        <!-- <li><a href="">About</a></li> -->
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- End -->
+
+
+
+    <div class="container">
+        <span class="big-circle"></span>
+        <img src="images/shape.png" class="square" alt="" />
+        <div class="form">
+            <div class="contact-info">
+                <h3 class="title">Let's get in touch</h3>
+                <p class="text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+                    dolorum adipisci recusandae praesentium dicta!
+                </p>
+
+                <div class="info">
+                    <div class="information">
+                        <img src="images/location.png" class="icon" alt="" />
+                        <p>92 Cherry Drive Uniondale, NY 11553</p>
+                    </div>
+                    <div class="information">
+                        <img src="images/email.png" class="icon" alt="" />
+                        <p>lorem@ipsum.com</p>
+                    </div>
+                    <div class="information">
+                        <img src="images/phone.png" class="icon" alt="" />
+                        <p>123-456-789</p>
+                    </div>
+                </div>
+
+                <div class="social-media">
+                    <p>Connect with us :</p>
+                    <div class="social-icons">
+                        <a href="#">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <span class="circle one"></span>
+                <span class="circle two"></span>
+
+                <form action="index.html" autocomplete="off">
+                    <h3 class="title">Contact us</h3>
+                    <div class="input-container">
+                        <input type="text" name="name" class="input" />
+                        <label for="">Username</label>
+                        <span>Username</span>
+                    </div>
+                    <div class="input-container">
+                        <input type="email" name="email" class="input" />
+                        <label for="">Email</label>
+                        <span>Email</span>
+                    </div>
+                    <div class="input-container">
+                        <input type="tel" name="phone" class="input" />
+                        <label for="">Phone</label>
+                        <span>Phone</span>
+                    </div>
+                    <div class="input-container textarea">
+                        <textarea name="message" class="input"></textarea>
+                        <label for="">Message</label>
+                        <span>Message</span>
+                    </div>
+                    <input type="submit" value="Send" class="btn" />
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="contact_us.js"></script>
+</body>
+
+</html>
